@@ -13,7 +13,7 @@ var client = new hub.Hub('powny.nl:50051', grpc.credentials.createInsecure())
 const createUser = async userId => {
   return new Promise((resolve, reject) => {
     // For a list of calls navigate to /proto/hub.proto & /proto/messages.proto
-    client.CreateUser({ userId: userId }, (error, response) => {
+    client.CreateUser({ userId }, (error, response) => {
       if (error) {
         reject(error)
       }
@@ -24,7 +24,7 @@ const createUser = async userId => {
 
 const getBalance = async userId => {
   return new Promise((resolve, reject) => {
-    client.GetBalance({ userId: userId }, (error, response) => {
+    client.GetBalance({ userId }, (error, response) => {
       if (error) {
         reject(error)
       }

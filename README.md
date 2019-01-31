@@ -1,4 +1,4 @@
-# Node.JS rpcHub Communication Example
+# rpcHub Communication Example
 
 Simple examples showing how to communicate with rpcHub over gRPC using NodeJS & Python
 
