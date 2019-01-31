@@ -1,0 +1,13 @@
+{
+  "name": "rpchub-node-example",
+  "version": "0.0.1",
+  "author": {
+    "email": "lewis@iota.org",
+    "name": "Lewis Freiberg"
+  },
+  "description": "A simple example showing how to communitcate with rpcHub over gRPC using NodeJS",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.3.0",
+    "grpc": "^1.15.1"
+  }
+}
